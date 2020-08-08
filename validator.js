@@ -51,5 +51,5 @@ function inputIsValid(fullName, emailAddress, username,  dateOfBirth, website, s
 }
 
 
-let isValid = inputIsValid("Lawal Godwin","godLinl200e@gy.webmail.com","myusername","09-10-2020", "www.google.com","No. 7, ogobia ugboju lga, Benue, Nigeria.")
+let isValid = inputIsValid("Lawal Godwin","godLawalinl200e@gy.webmail.com","myusername","09-10-2020", "www.google.com","No. 7, ogobia ugboju lga, Benue, Nigeria.")
 console.log(isValid);
