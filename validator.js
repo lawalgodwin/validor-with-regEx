@@ -1,37 +1,35 @@
+
 /**
-@author Godwin Lawal
-
-@function validator
-
-@returns Boolean
-
-@augments [fullName, email, username, dateOfBirth, website, streetAddress]
-
-@description A function that validates user input using regular expressions pattern
-             
-@example 
-
-             0 argument - user's fullName case insensitive not less than two letters
-             1 argument - valid email address case insensitive
-             2 argument - username (alphanumeric only)
-             3 argument - date of birth in the format (dd-mm-yyyy)
-             4 argument - website url (with or without https:// , http://and  www. prefix) subdomain also supported
-             5 argument - street address in the format (No. 6, street, state, country.)
+ *
+ *@author Lawal Godwin
+ * @param {*} fullName
+ * @param {*} emailAddress
+ * @param {*} username
+ * @param {*} dateOfBirth
+ * @param {*} website
+ * @param {*} streetAddress
+ * @returns {Boolean} true if all arguments are valid otherwise false
+ * @description A function that validates user input using regular expressions pattern
+ * 
+ * @example
+ *              
+ * 0 argument - fullName case insensitive not less than two letters
+ * 1 argument - valid email address case insensitive
+ * 2 argument - username (alphanumeric only)
+ * 3 argument - date of birth in the format (dd-mm-yyyy)
+ * 4 argument - website url (with or without https:// , http://and  www. prefix) subdomain also supported
+ * 5 argument - street address in the format (No. 6, street, state, country.)
 
 
                 return type: Boolean 
 
                 true if all arguments are valid otherwise returns false
+ * for example:
 
-            for example:
+ *  let validityStatus = validator("John Doe", "foo@gmail.com", "foousername", "16-04-1998", "http://google.com, "No. 27, Lagos Street, Benue, Nigeria"")
 
-            let validityStatus = validator("John Doe", "foo@gmail.com", "foousername", "16-04-1998", "http://google.com, "No. 27, Lagos Street, Benue, Nigeria"")
-
-            console.log(validityStatus)
-
- 
+ *  console.log(validityStatus)
  */
-
 function inputIsValid(fullName, emailAddress, username,  dateOfBirth, website, streetAddress) {
 
     let fullNamePattern = /^[a-zA-Z]{2,}\s?([a-zA-Z]{2,})?$/g
