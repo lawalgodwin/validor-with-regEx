@@ -11,7 +11,7 @@
              
 @example 
 
-            0 argument - User's full name case insensitive
+             0 argument - user's fullName case insensitive not less than two letters
              1 argument - valid email address case insensitive
              2 argument - username (alphanumeric only)
              3 argument - date of birth in the format (dd-mm-yyyy)
